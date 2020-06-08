@@ -6,10 +6,10 @@
     <title>Tumbas Sembako</title>
 
     <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- Application CSS -->
-    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body class="min-h-screen flex flex-col py-5 font-sans px-6 md:px-16 lg:px-24">
 
@@ -19,7 +19,7 @@
             <div class="mobile-menu flex justify-between w-full md:w-auto">
                 <!-- Logo Start -->
                 <div class="brand-logo lg:mr-10 w-full md:w-auto">
-                    <img src="/assets/images/logo.png" class="w-20 lg:w-32" alt="Logo TUSKO">
+                    <img src="assets/images/logo.png" class="w-20 lg:w-32" alt="Logo TUSKO">
                 </div>
                 <!-- Logo End -->
 
@@ -40,12 +40,12 @@
             <!-- Search Box Start -->
             <form action="#" class="hidden lg:block w-full">
                 <div class="flex">
-                    <div class="icon py-4 pl-5 pr-0 bg-gray-300">
+                    <div class="icon py-4 pl-5 pr-0 bg-gray-300 rounded">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500">
                             <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg>
                     </div>
-                    <input type="text" class="bg-gray-300 py-4 px-4 focus:outline-none w-full" placeholder="Belanja apa hari ini?">
+                    <input type="text" class="bg-gray-300 py-4 px-4 rounded focus:outline-none w-full" placeholder="Belanja apa hari ini?">
                 </div>
             </form>
             <!-- Search Box End -->
@@ -61,12 +61,12 @@
             <div class="menu-item hidden sm:hidden flex flex-col items-center p-6 mt-1 bg-white shadow-md">
                 <!-- Search Box Mobile Start -->
                 <form action="#" class="w-full">
-                    <div class="icon py-4 pl-5 pr-0 bg-gray-300 absolute">
+                    <div class="icon py-4 pl-5 pr-0 bg-gray-300 absolute rounded">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500">
                             <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg>
                     </div>
-                    <input type="text" class="bg-gray-300 py-4 pl-16 pr-4 focus:outline-none w-full" placeholder="Belanja apa hari ini?">
+                    <input type="text" class="bg-gray-300 py-4 pl-16 pr-4 rounded focus:outline-none w-full" placeholder="Belanja apa hari ini?">
                 </form>
                 <!-- Search Box Mobile End -->
 
@@ -86,19 +86,287 @@
     <!-- Header End -->
 
     <main class="flex-grow mt-16">
-        <div class="hero p-8 flex justify-around items-center rounded-lg">
-            <div class="hero-text">
-                <h1 class="text-4xl font-bold leading-tight text-black mb-3">
-                    Penuhi Kebutuhan Kamu<br>Hanya dari Rumah!
-                </h1>
-                <p class="text-lg text-gray-700">TUSKO akan membantu kamu menyediakan<br>semua kebutuhan pokok dan kebutuhan<br>rumah tangga kamu di masa pandemi virus COVID-19</p>
+        <!-- Hero Start -->
+        <section id="hero" class="rounded-lg">
+            <div class="container">
+                <div class="p-8 flex flex-col md:flex-row justify-around items-center">
+                    <div class="hero-text">
+                        <h1 class="text-2xl lg:text-4xl font-bold leading-tight text-black mb-3 text-center md:text-left md:text-start">
+                            Penuhi Kebutuhan Kamu<br class="hidden md:block lg:hidden xl:block"> Hanya dari Rumah!
+                        </h1>
+                        <p class="text-lg text-gray-700 text-center md:text-left">TUSKO akan membantu kamu menyediakan<br class="hidden md:block"> semua kebutuhan pokok dan kebutuhan <br class="hidden lg:block">rumah tangga kamu di masa pandemi virus COVID-19</p>
+                    </div>
+                    <div class="hero-image mt-8 md:mt-0">
+                        <img src="assets/images/hero-illustration.svg" alt="Hero Illustration">
+                    </div>
+                </div>
             </div>
-            <div class="hero-image">
-                <img src="/assets/images/hero-illustration.svg" alt="Hero Illustration">
+        </section>
+        <!-- Hero End -->
+
+        <!-- Category Start -->
+        <section id="category" class="mt-10">
+            <h1 class="font-semibold text-lg">Daftar Kategori</h1>
+            <div class="container max-w-full">
+                <div class="flex mt-2 overflow-auto -mx-1">
+                    <div class="px-1 w-full">
+                        <button class="box flex justify-center items-center bg-gray-200 py-3 px-4 rounded hover:bg-gray-400 duration-300 border border-gray-500 w-full h-full">
+                            <svg width="20" height="15" viewBox="0 0 60 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 26.5H56.7143" stroke="#16A085" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 3H56.7143" stroke="#16A085" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 50H56.7143" stroke="#16A085" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                            <p class="font-semibold text-center text-sm text-gray-600 leading-none ml-2">Semua Kategori</p>
+                        </button>
+                    </div>
+                    <div class="px-1 w-full">
+                        <button class="box flex justify-center items-center bg-gray-200 py-3 px-4 rounded hover:bg-gray-400 duration-300 border border-gray-500 w-full h-full">
+                            <svg width="20" height="25" viewBox="0 0 65 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.0981 6.01496C21.5364 7.16041 18.562 8.76404 16.4798 9.60403C12.1668 11.284 8.67178 14.4913 8.67178 16.8585C8.67178 17.7749 9.04359 19.9894 9.48976 21.8221C10.3077 25.1058 10.2334 25.1821 7.63071 27.8548C2.27663 33.353 0.41757 39.1566 0.0457586 50.7638C-0.177328 61.0728 0.268845 62.6001 4.73058 66.4182C12.1668 72.68 29.4188 75.6582 43.622 73.0618C47.4145 72.4509 48.5299 71.9164 48.6787 70.7709C48.9761 69.4728 48.6787 69.3964 45.7785 69.8546C30.2368 72.2218 15.7362 70.3891 7.92816 65.0437C6.14346 63.8219 4.28441 62.0655 3.76387 61.0728C2.79716 59.3165 2.35099 55.0401 3.09461 55.0401C3.3177 55.0401 4.8793 56.4147 6.58964 58.171C10.6796 62.2183 12.2412 63.1346 12.8361 61.531C13.1335 60.7674 12.1668 59.3165 9.86157 57.2546C4.8793 52.6729 2.42535 48.0911 3.02025 44.3493C3.61515 40.302 6.51527 33.8112 8.96923 30.7566L11.0514 28.313L13.2079 30.1457C16.3311 32.8948 22.875 35.1857 29.1214 35.7202C35.2935 36.2548 38.4167 35.6439 38.4167 34.0402C38.4167 33.1239 37.3756 32.8948 33.5831 32.8948C24.9571 32.8948 16.7773 30.2985 14.3233 26.633C13.7284 25.7167 12.7617 23.1967 12.3155 20.9058C11.4975 17.3167 11.5719 16.7058 12.7617 15.3313C14.6208 13.2695 15.1413 13.4222 14.7695 15.9422C14.3977 18.9203 17.2978 22.3567 22.2057 24.4949C28.4521 27.2439 38.4167 27.5494 38.4167 24.953C38.4167 24.2658 36.7063 23.8076 32.319 23.5785C28.8983 23.3494 25.1802 22.6621 23.916 22.1276C21.239 20.9058 17.5952 17.6985 17.5952 16.4004C17.5952 14.9495 20.4954 11.6658 24.0648 9.14585C27.7085 6.54951 28.3778 6.62587 32.6164 10.1386C34.4755 11.5895 34.9216 11.6658 37.6731 10.8258C40.3501 10.0622 41.0194 10.0622 42.581 11.1313C43.622 11.8186 44.7375 12.124 45.1093 11.8949C46.4478 11.0549 45.8529 9.52767 43.5477 8.15313C41.3912 6.85496 39.2347 6.77859 36.1114 8.07677C35.4422 8.30585 33.8062 7.54223 32.0959 6.16769C28.6009 3.34225 26.8162 3.26589 23.0981 6.01496Z" fill="#16A085"/>
+                                <path d="M50.3147 3.6114C49.0506 5.36776 47.8608 8.04047 47.6377 9.6441C47.1915 12.3932 47.1172 12.4695 45.3325 11.6295C42.5067 10.3314 41.1682 12.6223 41.6887 17.5859C41.9862 19.6477 42.1349 21.8622 42.0605 22.3204C41.9862 23.6186 41.9118 30.1858 41.9862 32.0949C41.9862 32.9349 41.9862 35.3021 41.9862 37.4403C41.9118 39.5021 41.9118 41.9457 41.9862 42.7857C41.9862 43.6257 41.9118 46.2221 41.9118 48.5129C41.7631 53.9347 43.3247 56.5311 48.0839 58.7456C51.5789 60.2729 51.7276 60.502 51.9507 63.7856C52.0994 66.2292 52.4713 67.2219 53.2892 67.2219C54.1072 67.2219 54.479 66.2292 54.6278 63.7856C54.8508 60.502 54.9996 60.2729 58.4946 58.7456C63.2538 56.5311 64.8154 53.9347 64.6667 48.5129C64.6667 46.2221 64.5923 43.6257 64.5923 42.7857C64.6667 41.9457 64.6667 39.5021 64.5923 37.4403C64.5923 35.3021 64.5923 32.9349 64.5923 32.0949C64.6667 30.1858 64.5923 23.6186 64.5179 22.3204C64.4436 21.8622 64.5923 19.6477 64.8897 17.5859C65.4103 12.6223 64.0718 10.3314 61.246 11.6295C59.4613 12.4695 59.3869 12.3932 58.9408 9.6441C58.4946 6.74229 54.6278 0.404152 53.2892 0.404152C52.9174 0.404152 51.5789 1.85505 50.3147 3.6114ZM55.4457 8.26956C56.4868 11.2477 56.2637 13.615 54.5534 16.0586C53.5867 17.2804 53.2892 17.3568 52.2482 16.5168C50.4635 14.9895 50.0173 10.9423 51.3558 7.73502C52.7687 4.29867 54.0329 4.4514 55.4457 8.26956ZM47.7864 16.2877C49.8686 17.9677 51.0584 20.4113 51.0584 22.7786C51.0584 24.3058 50.7609 24.6113 49.5711 24.3058C47.2659 23.6949 44.3658 19.6477 44.3658 17.1277C44.3658 14.6077 45.4812 14.3022 47.7864 16.2877ZM62.2127 17.1277C62.2127 19.724 59.3126 23.6949 56.933 24.3058C55.4457 24.6876 55.3714 24.5349 55.7432 21.5567C56.0406 19.2659 56.7843 17.8913 58.2715 16.6695C61.0973 14.3022 62.2127 14.455 62.2127 17.1277ZM47.7864 26.9785C49.8686 28.6585 51.0584 31.1021 51.0584 33.4694C51.0584 34.9967 50.7609 35.3021 49.5711 34.9967C47.2659 34.3858 44.3658 30.3385 44.3658 27.8185C44.3658 25.2985 45.4812 24.9931 47.7864 26.9785ZM62.2127 27.8185C62.2127 30.4149 59.3126 34.3858 56.933 34.9967C55.4457 35.3785 55.3714 35.2258 55.7432 32.2476C56.0406 29.9567 56.7843 28.5822 58.2715 27.3604C61.0973 24.9931 62.2127 25.1458 62.2127 27.8185ZM47.7864 37.6694C49.8686 39.3494 51.0584 41.793 51.0584 44.1602C51.0584 45.6875 50.7609 45.993 49.5711 45.6875C47.2659 45.0766 44.3658 41.0294 44.3658 38.5094C44.3658 35.9894 45.4812 35.6839 47.7864 37.6694ZM62.2127 38.5094C62.2127 41.1057 59.3126 45.0766 56.933 45.6875C55.4457 46.0693 55.3714 45.9166 55.7432 42.9384C56.0406 40.6475 56.7843 39.273 58.2715 38.0512C61.0973 35.6839 62.2127 35.8367 62.2127 38.5094ZM47.7864 48.3602C49.8686 50.0402 51.0584 52.4838 51.0584 54.8511C51.0584 56.3784 50.7609 56.6838 49.5711 56.3784C47.2659 55.7674 44.3658 51.7202 44.3658 49.2002C44.3658 46.6802 45.4812 46.3748 47.7864 48.3602ZM62.2127 49.2002C62.2127 51.7966 59.3126 55.7674 56.933 56.3784C55.4457 56.7602 55.3714 56.6074 55.7432 53.6293C56.0406 51.3384 56.7843 49.9638 58.2715 48.742C61.0973 46.3748 62.2127 46.5275 62.2127 49.2002Z" fill="#16A085"/>
+                                <path d="M26.1468 11.5131C25.6263 12.4294 26.2955 13.804 27.3366 13.804C28.229 13.804 28.229 11.7421 27.3366 11.1312C26.9648 10.9022 26.4443 11.0549 26.1468 11.5131Z" fill="#16A085"/>
+                                <path d="M23.3212 15.7894C22.3545 16.7821 22.8006 17.6221 24.3622 17.6221C25.1802 17.6221 25.7751 17.2403 25.6264 16.7057C25.2546 15.6366 23.9904 15.1021 23.3212 15.7894Z" fill="#16A085"/>
+                                <path d="M28.7495 16.4766C28.7495 17.0875 29.27 17.6221 29.8649 17.6221C30.4598 17.6221 30.9804 17.0875 30.9804 16.4766C30.9804 15.8657 30.4598 15.3312 29.8649 15.3312C29.27 15.3312 28.7495 15.8657 28.7495 16.4766Z" fill="#16A085"/>
+                            </svg>
+                            <p class="font-semibold text-center text-sm text-gray-600 leading-none ml-2">Kategori Beras</p>
+                        </button>
+                    </div>
+                    <div class="px-1 w-full">
+                        <button class="box flex justify-center items-center bg-gray-200 py-3 px-4 rounded hover:bg-gray-400 duration-300 border border-gray-500 w-full h-full">
+                            <svg width="20" height="25" viewBox="0 0 65 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M55.9765 3.893C52.196 6.28818 45.7433 10.2163 41.6369 12.7073L34.1413 17.2102L24.7554 17.0186C16.4124 16.827 15.2392 17.0186 13.2838 18.7431C12.1106 19.797 10.6766 21.7131 10.09 23.0544C9.50337 24.2999 7.41762 28.0364 5.39705 31.3897C-0.469115 40.9704 -1.18609 45.2817 1.48627 53.7128C3.11577 58.9822 6.89619 64.4432 11.1329 67.7964C13.5445 69.7126 14.9133 70 20.4536 70C26.3849 70 27.3626 69.7126 31.3386 66.9342C36.1618 63.5809 40.2682 58.1199 42.2887 52.3715C43.0057 50.2637 43.9834 44.6111 44.5048 39.7249C45.1566 33.21 45.6781 30.719 46.5906 29.8568C47.2424 29.2819 51.6094 26.4077 56.2372 23.4377C61.7775 19.9886 64.8409 17.4976 64.9713 16.5396C65.1016 15.5815 64.7757 14.9108 64.2543 14.9108C62.3641 14.9108 45.8084 25.5454 44.3093 27.749C43.1361 29.5693 42.6146 31.9645 41.8977 38.9585C40.8548 49.4014 38.9646 54.7666 34.6627 59.557C28.4707 66.5509 19.0848 68.7545 12.9579 64.6348C5.52741 59.7486 0.4434 47.1021 3.50684 41.162C4.35418 39.4375 4.41936 39.6291 4.48454 43.2698C4.48454 51.2218 8.72122 54.9583 15.8258 53.2337C25.7331 50.8385 34.8583 43.2698 37.7913 34.8387C38.8994 31.6771 38.9646 30.5274 38.378 27.749C37.9869 26.0245 36.8788 23.6293 35.9663 22.5754C34.4672 20.8509 34.402 20.6593 35.5101 20.0844C36.227 19.797 43.0709 15.7731 50.7621 11.1743C59.6917 5.80914 64.7757 2.26427 64.7757 1.40201C64.7757 -0.993172 62.9507 -0.418335 55.9765 3.893ZM31.6645 23.3419C33.2288 24.4916 34.9234 26.5035 35.5101 27.749C36.4226 29.8568 36.4226 30.3358 35.5101 32.9226C32.968 40.1081 24.4295 47.2937 15.7606 49.4014C12.1106 50.2637 8.52568 49.3056 7.61316 47.2937C5.72295 42.8865 8.33014 31.4855 12.8275 24.5874L15.4999 20.4677L22.2134 20.8509C27.493 21.1383 29.5135 21.7131 31.6645 23.3419Z" fill="#16A085"/>
+                                <path d="M14.5222 33.2101C13.8704 34.8388 15.3695 36.6591 16.282 35.3178C17.0642 34.1682 16.5427 32.1562 15.565 32.1562C15.2391 32.1562 14.7829 32.6352 14.5222 33.2101Z" fill="#16A085"/>
+                                <path d="M11.915 38.9584C11.2632 40.5871 12.7623 42.4074 13.6748 41.0661C14.457 39.9164 13.9356 37.9045 12.9579 37.9045C12.632 37.9045 12.1757 38.3835 11.915 38.9584Z" fill="#16A085"/>
+                                <path d="M17.1294 38.9584C16.4776 40.5871 17.9767 42.4074 18.8892 41.0661C19.6714 39.9164 19.1499 37.9045 18.1722 37.9045C17.8463 37.9045 17.3901 38.3835 17.1294 38.9584Z" fill="#16A085"/>
+                            </svg>
+                            <p class="font-semibold text-center text-sm text-gray-600 leading-none ml-2">Kategori Gula</p>
+                        </button>
+                    </div>
+                    <div class="px-1 w-full">
+                        <button class="box flex justify-center items-center bg-gray-200 py-3 px-4 rounded hover:bg-gray-400 duration-300 border border-gray-500 w-full h-full">
+                            <svg width="20" height="25" viewBox="0 0 50 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.6156 0.332382C17.3281 0.637276 17.1124 2.00928 17.1124 3.45751C17.1124 5.59175 16.8967 5.97287 15.387 5.97287C13.3021 5.97287 12.2957 7.26865 13.4459 8.48822C14.6681 9.784 14.4524 19.3881 13.0865 22.2083C12.4394 23.5803 9.92325 27.5439 7.55083 31.0502C1.58383 39.892 -0.429134 45.3038 0.0741066 51.4779C0.433564 56.8135 2.73409 62.5302 6.32867 67.1035L8.55731 70H22.8637H37.1701L39.3988 67.1035C45.1501 59.7099 47.235 49.9534 44.5031 42.5598C43.0652 38.5962 43.0652 38.2913 44.2155 37.6053C49.1041 34.6326 51.1171 29.4495 49.3917 24.495C48.0976 20.9888 45.3658 18.8545 41.4836 18.3972C38.8955 18.0923 37.8172 18.3972 35.5166 20.0741C33.288 21.6748 32.5691 21.9034 32.1377 21.065C31.2031 19.6167 31.3469 9.47911 32.2815 8.48822C33.4318 7.26865 32.4253 5.97287 30.4123 5.97287C28.9745 5.97287 28.6869 5.51553 28.4713 3.0764L28.2556 0.256157L23.2232 0.0274887C20.4194 -0.0487289 17.9032 0.0274887 17.6156 0.332382ZM25.7394 4.44841C25.7394 5.7442 25.2361 5.97287 22.8637 5.97287C20.4913 5.97287 19.9881 5.7442 19.9881 4.44841C19.9881 3.15263 20.4913 2.92396 22.8637 2.92396C25.2361 2.92396 25.7394 3.15263 25.7394 4.44841ZM28.615 14.6623C28.615 21.3699 29.4059 23.5803 34.5102 31.1264C36.6669 34.2515 39.1112 38.1389 40.0458 39.6633L41.6993 42.5598H22.8637H4.10003L4.96273 40.8067C5.39408 39.892 7.69461 36.3095 10.067 32.8795C15.9621 24.1901 17.1124 21.2174 17.1124 14.5098V9.02178H22.8637H28.615V14.6623ZM45.222 23.4279C46.6598 24.9523 47.3068 26.4006 47.3068 28.0775C47.3068 30.8215 43.9279 34.9375 41.7712 34.9375C40.4053 34.8613 35.0853 27.4677 35.0853 25.4859C35.0853 23.809 38.608 21.2174 40.9804 21.2174C42.3463 21.2174 43.856 21.9796 45.222 23.4279ZM42.562 50.5632C42.4901 55.6701 40.7647 60.5484 37.6734 64.512L35.6604 66.9511H22.8637H10.067L8.05407 64.4357C5.39408 61.1582 3.45301 56.2799 2.94977 51.7828C2.23085 45.1514 0.864914 45.5325 23.0075 45.7612L42.6339 45.9898L42.562 50.5632Z" fill="#16A085"/>
+                            </svg>
+                            <p class="font-semibold text-center text-sm text-gray-600 leading-none ml-2">Kategori Minyak</p>
+                        </button>
+                    </div>
+                    <div class="px-1 w-full">
+                        <button class="box flex justify-center items-center bg-gray-200 py-3 px-4 rounded hover:bg-gray-400 duration-300 border border-gray-500 w-full h-full">
+                            <svg width="20" height="25" viewBox="0 0 50 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.7 0.319534C8.3 0.61956 8 2.19469 8 3.84481C8 5.86997 6.8 8.49518 4 12.2455L0 17.7209L0.2 43.8229L0.5 70H25H49.5L49.8 43.6729L50 17.3459L47.3 12.9205C45.8 10.5203 44.4 6.62003 44.1 4.36985L43.5 0.24453L26.4 0.019516C17.1 -0.0554962 9.1 0.0945206 8.7 0.319534ZM40 4.36985C40 5.79497 39.3 5.86997 26 5.86997C12.7 5.86997 12 5.79497 12 4.36985C12 2.94474 12.7 2.86974 26 2.86974C39.3 2.86974 40 2.94474 40 4.36985ZM36.8 12.6205L34.7 16.3708H20.4C12.5 16.3708 6 16.1458 6 15.9208C6 15.6957 7.2 14.0456 8.6 12.1705L11.2 8.8702H25H38.9L36.8 12.6205ZM44.3 15.0957C46.7 19.596 46.9 38.4975 44.4 37.8225C43.5 37.5975 41.7 37.1474 40.4 36.9224C38 36.4724 38 36.3224 38 27.3967C38 20.4211 38.4 17.4959 39.8 15.0957C40.7 13.2956 41.7 11.8704 42 11.8704C42.3 11.8704 43.3 13.2956 44.3 15.0957ZM34 28.2967V37.1474L30.4 37.5975C25.7 38.1975 22.9 37.0724 18.9 33.1721C15.2 29.4968 10 27.2466 6.4 27.9217C4.1 28.3717 4 28.2967 4 23.8714V19.371H19H34V28.2967ZM15.9 35.1223C22.2 40.0727 25.2 41.2727 30.4 40.5977L34 40.1477V53.7987V67.3748H19H4V49.7484C4 33.8472 4.2 32.122 5.8 31.447C8.9 30.0969 10.2 30.5469 15.9 35.1223ZM44.3 42.0228C45.8 43.2979 46 45.1731 46 55.4489V67.3748H42H38V53.4237V39.5476L40.3 39.9976C41.5 40.2977 43.3 41.1977 44.3 42.0228Z" fill="#16A085"/>
+                            </svg>                        
+                            <p class="font-semibold text-center text-sm text-gray-600 leading-none ml-2">Kategori Susu</p>
+                        </button>
+                    </div>
+                    <div class="px-1 w-full">
+                        <button class="box flex justify-center items-center bg-gray-200 py-3 px-4 rounded hover:bg-gray-400 duration-300 border border-gray-500 w-full h-full">
+                            <svg width="25" height="20" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.67855 1.37987C2.15841 3.58749 1.67839 6.07107 1.59839 20.7885V34.5862L3.19845 31.5507C4.55851 29.0671 4.79851 26.9515 4.79851 18.029C4.79851 4.1394 5.11853 3.77146 15.1189 3.77146H22.3192L22.5592 6.25504C22.7992 8.73861 22.9592 8.8306 27.1994 8.8306C31.4396 8.8306 31.5996 8.73861 31.8396 6.25504L32.0796 3.77146H39.9999H47.9202L48.1602 6.25504C48.4002 8.73861 48.5602 8.8306 52.8004 8.8306C57.0406 8.8306 57.2006 8.73861 57.4406 6.25504L57.6806 3.77146H64.8809C74.8813 3.77146 75.2013 4.1394 75.2013 18.029C75.2013 26.9515 75.4413 29.0671 76.8014 31.5507L78.4014 34.5862V21.0645C78.4014 6.25504 77.8414 3.49551 74.3213 1.37987C71.2011 -0.459812 8.55866 -0.459812 5.67855 1.37987Z" fill="#16A085"/>
+                                <path d="M10.0788 27.7792C7.1187 30.4468 4.15858 36.6097 3.51856 41.4849C3.19855 43.8765 2.31851 46.1761 1.43848 46.82C-0.801612 48.7516 -0.321593 57.2142 2.1585 58.502C3.27855 59.0539 4.23859 60.8016 4.87861 63.2852C6.15866 68.7122 7.99873 70 14.399 70C20.7992 70 22.6393 68.7122 23.9994 63.1012C24.8794 59.5138 25.2794 58.9619 27.1995 58.9619C29.1196 58.9619 29.5196 59.5138 30.3996 63.1012C31.7597 68.7122 33.5997 70 40 70C46.4003 70 48.2403 68.7122 49.6004 63.1012C50.4804 59.5138 50.8804 58.9619 52.8005 58.9619C54.7206 58.9619 55.1206 59.5138 56.0006 63.1012C57.3607 68.7122 59.2008 70 65.601 70C72.0013 70 73.8413 68.7122 75.1214 63.2852C75.7614 60.8016 76.7214 59.0539 77.8415 58.502C80.3216 57.2142 80.8016 48.7516 78.5615 46.82C77.6815 46.1761 76.8015 43.8765 76.4814 41.4849C75.3614 33.5742 70.0012 25.8476 65.601 25.8476C61.1208 25.8476 55.6806 33.8502 54.7206 41.7608C54.3206 44.9803 53.8405 46.0841 52.8005 46.0841C51.7605 46.0841 51.2804 44.9803 50.8804 41.7608C49.9204 33.8502 44.4802 25.8476 40 25.8476C35.5198 25.8476 30.0796 33.8502 29.1196 41.7608C28.7196 44.9803 28.2395 46.0841 27.1995 46.0841C26.1595 46.0841 25.6794 44.9803 25.2794 41.7608C24.3194 33.8502 18.8792 25.8476 14.399 25.8476C13.1989 25.8476 11.2789 26.6754 10.0788 27.7792ZM17.8391 32.0105C20.2392 35.046 22.3993 40.4731 22.3993 43.7845V46.0841H14.399H6.39867V43.7845C6.39867 38.4494 11.4389 29.5269 14.399 29.5269C15.119 29.5269 16.6391 30.6307 17.8391 32.0105ZM43.4401 32.0105C45.8402 35.046 48.0003 40.4731 48.0003 43.7845V46.0841H40H31.9997V43.7845C31.9997 38.4494 37.0399 29.5269 40 29.5269C40.72 29.5269 42.2401 30.6307 43.4401 32.0105ZM69.0411 32.0105C71.4412 35.046 73.6013 40.4731 73.6013 43.7845V46.0841H65.601H57.6007V43.7845C57.6007 38.4494 62.6409 29.5269 65.601 29.5269C66.321 29.5269 67.8411 30.6307 69.0411 32.0105ZM76.8015 52.523V55.2825H40H3.19855V52.523V49.7635H40H76.8015V52.523ZM21.5993 59.4218C21.5993 59.6978 21.0392 61.3535 20.4792 63.1012C19.2792 66.3206 19.1992 66.3206 14.399 66.3206C9.5988 66.3206 9.5188 66.3206 8.31875 63.1012C7.75873 61.3535 7.1987 59.6978 7.1987 59.4218C7.1987 59.1459 10.4788 58.9619 14.399 58.9619C18.3991 58.9619 21.5993 59.1459 21.5993 59.4218ZM47.2003 59.4218C47.2003 59.6978 46.6403 61.3535 46.0802 63.1012C44.8802 66.3206 44.8002 66.3206 40 66.3206C35.1998 66.3206 35.1198 66.3206 33.9198 63.1012C33.3597 61.3535 32.7997 59.6978 32.7997 59.4218C32.7997 59.1459 36.0798 58.9619 40 58.9619C44.0002 58.9619 47.2003 59.1459 47.2003 59.4218ZM72.8013 59.4218C72.8013 59.6978 72.2413 61.3535 71.6812 63.1012C70.4812 66.3206 70.4012 66.3206 65.601 66.3206C60.8008 66.3206 60.7208 66.3206 59.5208 63.1012C58.9607 61.3535 58.4007 59.6978 58.4007 59.4218C58.4007 59.1459 61.6809 58.9619 65.601 58.9619C69.6012 58.9619 72.8013 59.1459 72.8013 59.4218Z" fill="#16A085"/>
+                            </svg>                        
+                            <p class="font-semibold text-center text-sm text-gray-600 leading-none ml-2">Kategori Telur</p>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        <!-- Category End -->
+
+        <!-- Featured Start -->
+        <section id="featured" class="mt-5">
+            <h1 class="font-semibold text-lg">Produk Pilihan</h1>
+            <div class="container">
+                <div class="flex flex-col md:flex-row mt-2 -mx-2 flex-wrap">
+                    <div class="card px-2 w-1/3 mb-4">
+                        <div class="rounded overflow-hidden shadow-lg h-full">
+                            <img class="w-full" src="https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Beras Asli dari Pegunungan Himalaya dan Semeru">
+                            <div class="flex flex-col justify-between">
+                                <div class="px-6 py-4">
+                                    <h1 class="font-bold text-black">Beras Asli dari Pegunungan Himalaya dan Semeru</h1>
+                                    <div class="flex justify-between items-center">
+                                        <div class="harga flex flex-col my-3">
+                                            <p class="text-red-600 font-semibold text-sm leading-none">
+                                                <strike>Rp. <span class="font-bold">12.000,00</span></strike>
+                                            </p>
+                                            <p class="text-green-600 font-bold text-lg">
+                                                Rp. 10.000,00/kg
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class="place flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle>
+                                            </svg>
+                                            <p class="mx-1 text-red-600 text-sm font-semibold">Kab. Tulungagung</p>
+                                            <a href="#" title="Toko Murdhani Jaya" class="px-2 py-1 border border-green-500 rounded-full text-xs text-black">Titipan</a>
+                                        </div>
+                                        <div class="rating flex mt-1 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#a0aec0" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <span class="ml-2 text-gray-500 font-semibold text-sm">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card px-2 w-1/3 mb-4">
+                        <div class="rounded overflow-hidden shadow-lg h-full">
+                            <img class="w-full" src="https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Telur Asli dari Pegunungan Tibet di China">
+                            <div class="flex flex-col justify-between">
+                                <div class="px-6 py-4">
+                                    <h1 class="font-bold text-black">Telur Asli dari Pegunungan Tibet di China</h1>
+                                    <div class="flex justify-between items-center">
+                                        <div class="harga flex flex-col my-3">
+                                            <p class="text-green-600 font-bold text-lg">
+                                                Rp. 20.000,00/kg
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class="place flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle>
+                                            </svg>
+                                            <p class="mx-1 text-red-600 text-sm font-semibold">Kab. Blitar</p>
+                                            <a href="#" title="Toko Pakdhe Supri" class="px-2 py-1 border border-green-500 rounded-full text-xs text-black">Titipan</a>
+                                        </div>
+                                        <div class="rating flex mt-1 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#a0aec0" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#a0aec0" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <span class="ml-2 text-gray-500 font-semibold text-sm">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card px-2 w-1/3 mb-4">
+                        <div class="rounded overflow-hidden shadow-lg h-full">
+                            <img class="w-full" src="https://images.unsplash.com/photo-1559598467-f8b76c8155d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Susu Cap Wuenak Pol">
+                            <div class="flex flex-col justify-between">
+                                <div class="px-6 py-4">
+                                    <h1 class="font-bold text-black">Susu Cap Wuenak Pol</h1>
+                                    <div class="flex justify-between items-center">
+                                        <div class="harga flex flex-col my-3">
+                                            <p class="text-red-600 font-semibold text-sm leading-none">
+                                                <strike>Rp. <span class="font-bold">30.000,00</span></strike>
+                                            </p>
+                                            <p class="text-green-600 font-bold text-lg">
+                                                Rp. 25.000,00/liter
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class="place flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle>
+                                            </svg>
+                                            <p class="mx-1 text-red-600 text-sm font-semibold">Kab. Tulungagung</p>
+                                        </div>
+                                        <div class="rating flex mt-1 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <span class="ml-2 text-gray-500 font-semibold text-sm">(20)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card px-2 w-1/3 mb-4">
+                        <div class="rounded overflow-hidden shadow-lg h-full">
+                            <img class="w-full" src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Mie Instan Bermicin Rendah dan Bergizi">
+                            <div class="flex flex-col justify-between">
+                                <div class="px-6 py-4">
+                                    <h1 class="font-bold text-black">Mie Instan Bermicin Rendah dan Bergizi</h1>
+                                    <div class="flex justify-between items-center">
+                                        <div class="harga flex flex-col my-3">
+                                            <p class="text-red-600 font-semibold text-sm leading-none">
+                                                <strike>Rp. <span class="font-bold">5.000,00</span></strike>
+                                            </p>
+                                            <p class="text-green-600 font-bold text-lg">
+                                                Rp. 2.300,00/biji
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class="place flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle>
+                                            </svg>
+                                            <p class="mx-1 text-red-600 text-sm font-semibold">Kab. Tulungagung</p>
+                                        </div>
+                                        <div class="rating flex mt-1 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                            </svg>
+                                            <span class="ml-2 text-gray-500 font-semibold text-sm">(400)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured End -->
     </main>
 
-    <script src="/assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
