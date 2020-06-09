@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600&display=swap');
 
+/**
+* Name : TUSKO Home Page
+* Author : Tumbas Sembako
+* LICENSE : -
+**/
+
 /* Hero */
 #hero {
     background-color: #F4D03F;
@@ -34,4 +40,24 @@
 .button-gpink:hover {
     background-color: #FAACA8;
     background-image: linear-gradient(19deg, #DDD6F3 0%, #FAACA8 100%);
+}
+
+/**
+* Name : TUSKO Sign Up Page
+* Author : Tumbas Sembako
+* LICENSE : -
+**/
+
+.signup-box {
+    background-image: url(https://images.unsplash.com/photo-1535224513923-e7bef3d0cae1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .signup-box {
+        background-image: none;
+    }
 }

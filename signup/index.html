@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumbas Sembako - Daftar Pembeli</title>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- Application CSS -->
+    <link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body class="min-h-screen font-sans">
+    
+    <main class="min-h-screen">
+        <div class="signup-box min-h-screen flex justify-center lg:justify-start w-full">
+            <div class="bg-white text-black px-24 py-32 w-full lg:w-1/2">
+                <div class="flex flex-col">
+                    <h1 class="text-3xl font-bold">Daftar Sebagai Pembeli</h1>
+                    <hr class="my-3 border-2 border-green-800">
+                    <div class="form-signup flex flex-col">
+                        <form action="#">
+                            <div class="form-group flex flex-col">
+                                <label for="nama" class="font-bold text-lg mb-2 text-gray-800">Nama</label>
+                                <input type="text" class="bg-gray-300 rounded p-3 focus:outline-none" placeholder="Nama Kamu">
+                            </div>
+                            <div class="form-group flex flex-col mt-4">
+                                <label for="nama" class="font-bold text-lg mb-2 text-gray-800">Email</label>
+                                <input type="text" class="bg-gray-300 rounded p-3 focus:outline-none" placeholder="Email Kamu">
+                            </div>
+                            <div class="form-group flex flex-col mt-4 mb-4">
+                                <label for="nama" class="font-bold text-lg mb-2 text-gray-800">Password</label>
+                                <div class="flex justify-between items-center">
+                                    <input type="text" class="bg-gray-300 rounded p-3 focus:outline-none w-full" placeholder="*******">
+                                    <button type="button" class="show-password bg-gray-400 p-3 rounded-tl-none rounded-bl-none rounded-tr rounded-br -ml-2 focus:outline-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-black">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="#" class="text-sm font-semibold">Lupa kata sandi?</a>
+                            <div class="flex justify-center mt-12">
+                                <button type="submit" class="bg-green-700 text-white text-lg font-bold px-10 py-3 shadow-lg hover:bg-green-800 duration-300 focus:outline-none">Daftar Sekarang</button>
+                            </div>
+                            <div class="other-signup mt-4">
+                                <h2 class="text-black font-semibold text-center">
+                                    Atau daftar menggunakan :
+                                </h2>
+                                <div class="flex justify-center items-center mt-2">
+                                    <button class="bg-white shadow-lg rounded-full border-2 border-gray-400 px-4 py-2 transition transform hover:scale-125 ease-in duration-300">Google</button>
+                                    <button class="ml-2 bg-white shadow-lg text-white rounded-full bg-blue-700 px-4 py-2 transition transform hover:scale-125 ease-in duration-300">Facebook</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
