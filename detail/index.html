@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumbas Sembako</title>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- Application CSS -->
+    <link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body class="min-h-screen flex flex-col font-sans text-black">
+
+    <!-- Header Start -->
+    <header class="py-5 px-6 md:px-16 lg:px-24">
+        <nav class="flex flex-col md:flex-row justify-between md:items-center">
+            <div class="mobile-menu flex justify-between w-full md:w-auto">
+                <!-- Logo Start -->
+                <div class="brand-logo lg:mr-10 w-full md:w-auto">
+                    <img src="/assets/images/logo.png" class="w-20 lg:w-32" alt="Logo TUSKO">
+                </div>
+                <!-- Logo End -->
+
+                <!-- Show Menu Start -->
+                <button class="menu-toggler block md:hidden">
+                    <a href="#" class="bg-gray-400 rounded py-2 px-4 flex justify-between items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                            <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                        <span class="ml-2 font-semibold">
+                            Menu
+                        </span>
+                    </a>
+                </button>
+                <!-- Show Menu End -->
+            </div>
+
+            <!-- Search Box Start -->
+            <form action="#" class="hidden lg:block w-full">
+                <div class="flex">
+                    <div class="icon py-4 pl-5 pr-0 bg-gray-300 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500">
+                            <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                    <input type="text" class="bg-gray-300 py-4 px-4 rounded focus:outline-none w-full" placeholder="Belanja apa hari ini?">
+                </div>
+            </form>
+            <!-- Search Box End -->
+
+            <!-- Login & Register Menu Start -->
+            <div class="hidden md:flex justify-between items-center lg:ml-10">
+                <a href="#" class="bg-green-700 px-6 py-2 rounded text-white font-semibold hover:bg-green-900 duration-300">Masuk</a>
+                <a href="/daftar" class="bg-white ml-4 text-black font-semibold">Daftar</a>
+            </div>
+            <!-- Login & Register Menu End -->
+
+            <!-- Menu Item Mobile Start -->
+            <div class="menu-item hidden sm:hidden flex flex-col items-center p-6 mt-1 bg-white shadow-md rounded-lg">
+                <!-- Search Box Mobile Start -->
+                <form action="#" class="w-full">
+                    <div class="icon py-4 pl-5 pr-0 bg-gray-300 absolute rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500">
+                            <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                    <input type="text" class="bg-gray-300 py-4 pl-16 pr-4 rounded focus:outline-none w-full" placeholder="Belanja apa hari ini?">
+                </form>
+                <!-- Search Box Mobile End -->
+
+                <!-- CTA Mobile Start -->
+                <div class="flex flex-col justify-center items-center mt-4">
+                    <h3 class="text-sm font-semibold mb-3">Baru menggunakan TUSKO?</h3>
+                    <div class="button-login">
+                        <a href="#" class="bg-green-700 px-6 py-2 rounded text-white font-semibold hover:bg-green-900 duration-300">Masuk</a>
+                        <a href="/daftar" class="bg-white ml-4 text-black font-semibold">Daftar</a>
+                    </div>
+                </div>
+                <!-- CTA Mobile End -->
+            </div>
+            <!-- Menu Item Mobile End -->
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main class="flex-grow mt-5 py-5 px-6 md:px-16 lg:px-24">
+        <!-- Product Detail Start -->
+        <section id="detail">
+            <div class="container">
+                <div class="flex flex-col lg:flex-row justify-center items-center lg:items-start">
+                    <div class="w-full lg:w-5/12">
+                        <img src="https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Telur Asli dari Pegunungan Tibet di China" class="bg-cover h-auto rounded w-full">
+                        <div class="flex items-center mt-6">
+                            <button class="open-tab bg-gray-400 focus:outline-none hover:bg-gray-500 duration-300 px-4 py-2 mr-2" onclick="openTab(event, 'desc');">Deskripsi</button>
+                            <button class="open-tab bg-gray-400 focus:outline-none hover:bg-gray-500 duration-300 px-4 py-2 mr-2" onclick="openTab(event, 'review');">Ulasan</button>
+                            <button class="open-tab bg-gray-400 focus:outline-none hover:bg-gray-500 duration-300 px-4 py-2" onclick="openTab(event, 'discussion');">Diskusi</button>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-7/12 mt-8 lg:ml-8 lg:mt-0">
+                        <div class="flex flex-col">
+                            <h1 class="text-3xl font-semibold leading-tight md:leading-normal">Telur Asli dari Pegunungan Tibet di China</h1>
+                            <div class="meta flex flex-col md:flex-row items-center justify-between">
+                                <div class="price flex items-center">
+                                    <p class="text-green-600 font-bold text-2xl">
+                                        Rp. 10.000,00/kg
+                                    </p>
+                                    <p class="text-red-600 font-semibold text-sm ml-2">
+                                        <strike>Rp. <span class="font-bold">12.000,00</span></strike>
+                                    </p>
+                                </div>
+                                <div class="ratings flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ecc94b" class="feather feather-star">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#a0aec0" class="feather feather-star">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                    <span class="ml-2 text-gray-500 font-semibold text-sm">(20)</span>
+                                </div>
+                            </div>
+                            <div class="short-desc mt-4">
+                                <div class="info flex flex-col">
+                                    <h2 class="text-gray-500 text-sm font-semibold">INFORMASI PRODUK</h2>
+                                    <div class="flex mt-2">
+                                        <div class="flex flex-col border-r border-l px-4">
+                                            <h4 class="text-sm text-gray-500">Satuan</h4>
+                                            <p>Kilo Gram</p>
+                                        </div>
+                                        <div class="flex flex-col border-r px-4">
+                                            <h4 class="text-sm text-gray-500">Pengembalian Dana</h4>
+                                            <p>Ya</p>
+                                        </div>
+                                        <div class="flex flex-col border-r px-4">
+                                            <h4 class="text-sm text-gray-500">Gratis Ongkir</h4>
+                                            <p>Ya</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs">
+                                <div id="desc" class="mt-4 tab hidden">
+                                    <h2 class="text-gray-500 text-sm font-semibold">DESKRIPSI PRODUK</h2>
+                                    <p class="mt-2">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi animi recusandae quidem. Laboriosam, doloremque nobis sint minima illum reiciendis similique. Nobis suscipit voluptas quaerat optio eveniet temporibus perspiciatis magni dolor?
+                                        Natus cum nisi velit, beatae nesciunt maiores culpa porro repellat eaque saepe, officia impedit numquam modi hic amet a magnam, itaque fuga eos. Maxime consequuntur unde architecto. Libero, rerum fugiat?
+                                    </p>
+                                    <p class="mt-2">
+                                        Eum suscipit, eveniet officiis minima reprehenderit corrupti nihil ducimus dicta commodi laudantium magni, facilis ipsa doloremque perspiciatis consequuntur dolore, obcaecati sint? Ab corporis quae aliquid quibusdam consectetur quis sit eaque.
+                                        Mollitia, sequi. Saepe fuga corrupti hic tenetur odit dignissimos suscipit beatae ut, quas dolor, deleniti dolore aut tempore ad harum qui nesciunt fugiat quo iste tempora atque! Perspiciatis, ab aut!
+                                    </p>
+                                </div>
+                                <div id="review" class="tab hidden">
+                                    Hello ini ulasan
+                                </div>
+                                <div id="discussion" class="tab hidden">
+                                    Hello ini diskusi
+                                </div>
+                            </div>
+                            <div class="add-to-cart flex flex-col md:flex-row items-center mt-4">
+                                <div class="qty flex items-center">
+                                    <button class="bg-gray-400 px-4 py-1 h-10 -mr-1 rounded-tr-none rounded-br-none z-10 text-xl focus:outline-none flex flex-col justify-center items-center font-bold">
+                                        -
+                                    </button>
+                                    <input type="text" class="bg-gray-200 p-2 w-16 focus:outline-none text-center h-10 text-xl" value="1">
+                                    <button class="bg-gray-400 px-4 py-1 h-10 -ml-1 rounded-tl-none rounded-bl-none text-xl focus:outline-none flex flex-col justify-center items-center font-bold">
+                                        +
+                                    </button>
+                                </div>
+                                <button class="px-8 py-3 bg-green-700 flex justify-center items-center rounded ml-4 text-white font-semibold transition transform hover:bg-green-800 hover:scale-105 ease-in-out duration-300 mt-4 md:mt-0">    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+                                        <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                    </svg>
+                                    <span class="ml-2">Tambah ke Keranjang</span>
+                                </button>
+                                <button class="wishlist ml-4 focus:outline-none mt-4 md:mt-0" title="Tambahkan ke daftar produk yang diinginkan">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product Detail End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="border-t mt-10">
+        <div class="container px-6 py-8 md:px-16 md:py-12 lg:px-24 lg:py-16 max-w-full">
+            <div class="flex flex-col lg:flex-row justify-between items-center">
+                <div class="about flex flex-col mb-8 lg:mr-8">
+                    <img src="/assets/images/logo.png" class="w-40 mx-auto lg:mx-0" alt="Tumbas Sembako Logo">
+                    <p class="text-green-700 -mt-4 text-center lg:text-left">Belanja kebutuhan mudahnya <br>gak masuk akal!</p>
+                    <p class="text-black mt-3 leading-none text-center lg:text-left">© 2020 - Tumbas Sembako</p>
+                    <pleading-tight text-center lg:text-left">Jl. Ir. Soekarno-Hatta, Kauman, <br>Tulungagung</p>
+                </div>
+                <div class="menu flex flex-col md:flex-row justify-between">
+                    <div class="menu w-full md:w-1/3 md:mr-4 lg:mr-8">
+                        <h2 class="text-green-900 font-semibold text-lg mb-3 text-center md:text-left">Belanja Sembako</h2>
+                        <div class="menu-link">
+                            <ul class="text-gray-600 flex flex-col items-center md:items-start">
+                                <li>
+                                    <a href="#" class="hover:text-gray-700">Beli Kebutuhan</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-gray-700">Jual Dagangan</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-gray-700">Kategori Sembako</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu w-full md:w-1/3 mt-10 md:mt-0 md:mr-4 lg:mr-8">
+                        <h2 class="text-green-900 font-semibold text-lg mb-3 text-center md:text-left">Pusat Bantuan</h2>
+                        <div class="menu-link">
+                            <ul class="text-gray-600 flex flex-col items-center md:items-start">
+                                <li>
+                                    <a href="#" class="hover:text-gray-700">Chat Langsung</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-gray-700">Tiket Bantuan</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-gray-700">Lapor Penyalahgunaan</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-gray-700">Lapor Penipuan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu w-full md:w-1/3 mt-10 md:mt-0">
+                        <h2 class="text-green-900 font-semibold text-lg mb-3 text-center md:text-left">Tumbas Sembako</h2>
+                        <div class="menu-link">
+                            <ul class="text-gray-600 flex flex-col items-center md:items-start">
+                                <li>
+                                    <a href="#" class="hover:text-gray-700">Karir</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-gray-700">Promo</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-gray-700">Pusat Bantuan</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-gray-700">Ketentuan Layanan</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-gray-700">Pusat Bantuan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
