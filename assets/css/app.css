@@ -48,7 +48,7 @@
 * LICENSE : -
 **/
 
-.signup-box {
+.login-box, .signup-box {
     background-image: url(/assets/images/auth-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,7 +57,7 @@
 }
 
 @media (max-width: 768px) {
-    .signup-box {
+    .login-box, .signup-box {
         background-image: none;
     }
 }

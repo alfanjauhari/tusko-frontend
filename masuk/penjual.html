@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tumbas Sembako - Daftar Pembeli</title>
+    <title>Tumbas Sembako - Masuk Pembeli</title>
 
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -14,21 +14,17 @@
 <body class="min-h-screen font-sans text-black">
     
     <main class="min-h-screen">
-        <div class="signup-box min-h-screen w-full">
+        <div class="login-box min-h-screen w-full">
             <div class="bg-white text-black w-full lg:w-1/2 flex justify-center lg:justify-start">
                 <div class="flex flex-col justify-between items-center w-full min-h-screen">
-                    <div class="signup px-6 md:px-24 py-16 md:py-32 w-full">
+                    <div class="login px-6 md:px-24 py-16 md:py-32 w-full">
                         <div class="logo flex justify-center -mt-12 md:-mt-32">
                             <img src="/assets/images/logo.png" alt="Logo Tumbas Sembako" class="w-40 -ml-1">
                         </div>
-                        <h1 class="text-2xl font-bold leading-none">Daftar Sebagai Pembeli</h1>
+                        <h1 class="text-2xl font-bold leading-none">Masuk Sebagai Penjual</h1>
                         <hr class="my-3 border-2 border-green-800">
-                        <div class="form-signup flex flex-col">
+                        <div class="form-login flex flex-col">
                             <form action="#">
-                                <div class="form-group flex flex-col">
-                                    <label for="nama" class="text-sm text-black mb-1 text-gray-800">Nama</label>
-                                    <input id="nama" type="text" class="bg-gray-300 rounded p-3 focus:outline-none" placeholder="Nama Kamu">
-                                </div>
                                 <div class="form-group flex flex-col mt-4">
                                     <label for="email" class="text-sm text-black mb-1 text-gray-800">Email</label>
                                     <input id="email" type="email" class="bg-gray-300 rounded p-3 focus:outline-none" placeholder="Email Kamu">
@@ -44,14 +40,14 @@
                                         </button>
                                     </div>
                                 </div>
-                                <p class="text-sm text-center">Dengan mendaftar kamu menyetujui <a href="#" class="text-indigo-600">Syarat dan Ketentuan</a></p>
+                                <a href="#" class="text-indigo-600 font-semibold hover:text-indigo-800 duration-300">Lupa Password</a>
                                 <div class="flex justify-center mt-4">
-                                    <button type="submit" class="bg-green-700 text-white text-lg tracking-wide font-bold px-10 py-3 rounded-sm shadow-lg hover:bg-green-800 duration-300 focus:outline-none">Daftar Sekarang</button>
+                                    <button type="submit" class="bg-green-700 text-white text-lg tracking-wide font-bold px-10 py-3 rounded-sm shadow-lg hover:bg-green-800 duration-300 focus:outline-none">Masuk</button>
                                 </div>
                             </form>
-                            <div class="other-signup mt-10">
+                            <div class="other-login mt-10">
                                 <h2 class="text-black font-semibold text-center">
-                                    Atau daftar menggunakan :
+                                    Atau masuk menggunakan :
                                 </h2>
                                 <div class="flex justify-center items-center mt-2">
                                     <button class="bg-white flex justify-center items-center shadow-lg rounded-full border-2 border-gray-400 px-4 py-2 transition transform hover:scale-105 ease-in duration-300 focus:outline-none">
@@ -88,17 +84,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="seller-signup -mt-8 md:-mt-20 flex justify-center w-full p-6">
+                    <div class="buyer-login -mt-8 md:-mt-20 flex justify-center w-full p-6">
                         <div class="flex flex-col items-center">
                             <h2 class="text-black font-semibold text-center mb-2">
-                                Kamu ingin menjual produk?
+                                Kamu ingin berbelanja?
                             </h2>
                             <div class="flex justify-center item-center flex-col md:flex-row">
                                 <div class="flex justify-center mb-2 md:mb-0">
-                                    <a href="/daftar/penjual.html" class="px-4 py-2 rounded-full shadow-lg bg-green-700 text-white font-semibold tracking-wide transition transform hover:scale-105 ease-in duration-300">Daftar Sebagai Penjual</a>
+                                    <a href="/daftar" class="px-4 py-2 rounded-full shadow-lg bg-green-700 text-white font-semibold tracking-wide transition transform hover:scale-105 ease-in duration-300">Daftar Sebagai Pembeli</a>
                                 </div>
                                 <div class="flex justify-center md:ml-2">
-                                    <a href="/masuk/penjual.html" class="px-4 py-2 rounded-full shadow-lg border-2 border-green-700 font-semibold tracking-wide transition transform hover:bg-green-700 hover:scale-105 hover:text-white ease-in duration-300">Masuk Sebagai Penjual</a>
+                                    <a href="/masuk" class="px-4 py-2 rounded-full shadow-lg border-2 border-green-700 font-semibold tracking-wide transition transform hover:bg-green-700 hover:scale-105 hover:text-white ease-in duration-300">Masuk Sebagai Pembeli</a>
                                 </div>
                             </div>
                         </div>
