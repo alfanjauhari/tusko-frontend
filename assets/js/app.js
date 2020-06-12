@@ -8,8 +8,15 @@ _e('.menu-toggler').addEventListener('click', () => {
     _e('.menu-item').classList.toggle('hidden');
 });
 
-// Tab Toggler
+// Description Toggler
 function openDesc(event) {
     let desc = document.getElementById('description');
     desc.classList.toggle('hidden');
+}
+
+// Show Input
+function showInput(event) {
+    let input = document.querySelector('.input-address');
+    input.classList.toggle('hidden');
+    input.scrollIntoView();
 }
